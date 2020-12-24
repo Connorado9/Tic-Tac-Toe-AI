@@ -116,7 +116,7 @@ def getAIMove(board, AILetter):
 
     # otherwise the AI tries to take one of the corners first if they are free
     move = chooseRandomMove(board, [1, 3, 7, 9])
-    if move != None:
+    if move is not None:
         return move
 
     # then tries to take the center if it's free
